@@ -10,16 +10,14 @@
 
 {% else %}
 
-<h1>Login to your account.</h1>
+<h1>Login.</h1>
 <br/>
+
 <form method="POST" action="{% url 'home' %}">
 	{% csrf_token %}
 
-	<form>
   <div class="mb-3">
     <input type="text" class="form-control" name="username", placeholder="Username" required>
-
-    <div id="emailHelp" class="form-text">This website is for entertainment and educational purposes.</div>
   </div>
 
 </br>
